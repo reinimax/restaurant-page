@@ -1,1 +1,4 @@
-console.log("This works");
+import "./reset.css";
+import "./style.css";
+
+console.log("This works now!");
