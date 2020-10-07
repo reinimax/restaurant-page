@@ -1,6 +1,7 @@
 import "./reset.css";
 import "./style.css";
-import { renderMainPage } from "./mainpage.js"
+import { renderMainPage } from "./mainpage.js";
+import { renderContact } from "./contact.js";
 
 (function() {
     const body = document.querySelector("body");
@@ -42,7 +43,7 @@ import { renderMainPage } from "./mainpage.js"
                 console.log("menu");
                 break;
                 case "contact-btn":
-                console.log("contact");
+                renderContact.fill();
                 break;
         }
     }
