@@ -2,6 +2,7 @@ import "./reset.css";
 import "./style.css";
 import { renderMainPage } from "./mainpage.js";
 import { renderContact } from "./contact.js";
+import { renderMenu } from "./menu.js";
 
 (function() {
     const body = document.querySelector("body");
@@ -40,7 +41,7 @@ import { renderContact } from "./contact.js";
                 renderMainPage.fill();
                 break;
             case "menu-btn":
-                console.log("menu");
+                renderMenu.fill();
                 break;
                 case "contact-btn":
                 renderContact.fill();
