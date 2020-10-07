@@ -12,6 +12,22 @@
     top: 75px;
 }
 
+.nav-btn {
+    background-color: rgb(43, 51, 49);
+    border: none;
+    height: 75px;
+    width: 150px;
+    color: white;
+}
+
+.blend {
+    background-color: rgb(53, 104, 53);
+}
+
+body {
+    background-color: rgb(53, 104, 53);
+}
+
 img {
     width: 500px;
 }

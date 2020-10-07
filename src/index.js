@@ -17,6 +17,7 @@ import { renderMenu } from "./menu.js";
     menuBtn.setAttribute("id", "menu-btn");
     contactBtn.setAttribute("id", "contact-btn");
     mainBtn.setAttribute("class", "nav-btn");
+    mainBtn.classList.add("blend");
     menuBtn.setAttribute("class", "nav-btn");
     contactBtn.setAttribute("class", "nav-btn");
     
@@ -36,6 +37,7 @@ import { renderMenu } from "./menu.js";
     
     function switchPage(event) {
         clearContent();
+        colorActiveBtn(event.target);
         switch (event.target.id) {
             case "main-btn":
                 renderMainPage.fill();
@@ -54,6 +56,15 @@ import { renderMenu } from "./menu.js";
             content.lastChild.remove();
         }
     }
+
+    function colorActiveBtn(btn) {
+        let buttons = navBar.childNodes;
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("blend");
+        }
+        btn.classList.add("blend");
+    }
+
 })();
 
 renderMainPage.fill();
