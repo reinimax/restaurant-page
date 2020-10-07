@@ -2,8 +2,9 @@ import "./reset.css";
 import "./style.css";
 import { renderMainPage } from "./mainpage.js"
 
-const navigator = (() => {
+(function() {
     const body = document.querySelector("body");
+    const content = document.querySelector("#content");
     const navBar = document.createElement("div");
     const mainBtn = document.createElement("button");
     const menuBtn = document.createElement("button");
@@ -29,7 +30,7 @@ const navigator = (() => {
         clearContent();
         switch (event.target.id) {
             case "main-btn":
-                console.log("main");
+                renderMainPage.fill();
                 break;
             case "menu-btn":
                 console.log("menu");
@@ -38,7 +39,9 @@ const navigator = (() => {
     }
     
     function clearContent() {
-        console.log("clearcontent");
+        while(content.childElementCount > 0) {
+            content.lastChild.remove();
+        }
     }
 })();
 
