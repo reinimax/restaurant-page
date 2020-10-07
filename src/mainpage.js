@@ -1,4 +1,4 @@
-export const renderMainPage = () => {
+export const renderMainPage = (() => {
 
     const content = document.querySelector("#content");
     const headLine = document.createElement("h1");
@@ -16,7 +16,11 @@ export const renderMainPage = () => {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.`;
 
-    content.appendChild(headLine);
-    content.appendChild(image);
-    content.appendChild(description);
-};
+    function fill() {
+        content.appendChild(headLine);
+        content.appendChild(image);
+        content.appendChild(description);
+    }
+
+    return { fill };
+})();
