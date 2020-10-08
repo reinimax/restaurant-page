@@ -10,6 +10,12 @@ export const renderContact = (() => {
     street.textContent = "Boulevard of Dreams 99";
     city.textContent = "12345 Los Angeles";
 
+    adressCard.setAttribute("id", "adresscard");
+    companyName.setAttribute("class", "itemname");
+    companyName.classList.add("contact-subdiv")
+    street.setAttribute("class", "contact-subdiv");
+    city.setAttribute("class", "contact-subdiv");
+
     function fill() {
         content.appendChild(adressCard);
         adressCard.appendChild(companyName);

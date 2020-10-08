@@ -1,6 +1,7 @@
 export const renderMainPage = (() => {
 
     const content = document.querySelector("#content");
+    const container = document.createElement("div");
     const headLine = document.createElement("h1");
     const image = document.createElement("img");
     const description = document.createElement("p");
@@ -16,10 +17,15 @@ export const renderMainPage = (() => {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.`;
 
+    container.setAttribute("id", "container");
+    description.setAttribute("class", "description");
+
+    container.appendChild(headLine);
+    container.appendChild(image);
+    container.appendChild(description);
+
     function fill() {
-        content.appendChild(headLine);
-        content.appendChild(image);
-        content.appendChild(description);
+        content.appendChild(container);
     }
 
     return { fill };
