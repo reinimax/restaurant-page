@@ -1,3 +1,5 @@
+import backgroundImage from "./pizza.jpg";
+
 export const renderMainPage = (() => {
 
     const content = document.querySelector("#content");
@@ -7,7 +9,7 @@ export const renderMainPage = (() => {
     const description = document.createElement("p");
 
     headLine.textContent = "The Pizza Temple - Best pizza in town";
-    image.setAttribute("src", "/img/pizza.jpg");
+    image.src = backgroundImage;
     image.setAttribute("alt", "Sliced pizza");
     description.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing 
                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
