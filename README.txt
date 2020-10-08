@@ -1,0 +1,2 @@
+The restaurant page-project. All the content is created via JavaScript.
+I found the JavaScript part quite easy this time, but I am not very pleased with the looks of the page. Surely, much could be improved. But for now I leave this quick and dirty as it is and move on.
