@@ -9,10 +9,10 @@ A simple restaurant page for the JavaScript curriculum at [The Odin Project](htt
 - This was my first time working with webpack. It went well and was fun.
 - I found the JavaScript part quite easy this time, but I am not very pleased with the looks of the page. This project was a quick and dirty one.
 
-## Demo
-
-[View it here](https://reinimax.github.io/restaurant-page/)
-
 ## Built with
 
 [webpack](https://webpack.js.org/)
+
+## Demo
+
+[View it here](https://reinimax.github.io/restaurant-page/)
